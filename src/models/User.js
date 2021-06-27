@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const User = new mongoose.Schema({
   name: {
     type: String,
-    required: true
+    required: true,
   },
 
   email: {
@@ -15,7 +15,7 @@ const User = new mongoose.Schema({
 
   active: {
     type: Boolean,
-    required: true,
+    default: true,
   }
 
 })
